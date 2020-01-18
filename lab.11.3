@@ -1,17 +1,19 @@
 #include <iostream>
+#include <clocale>
 	using namespace std;
 	int main()
 	{
-	    int i,sum,n;
-	    cout<<"Vvedite N"<<endl;
+	setlocale(LC_ALL,"Rus");
+	    int i,summa,n;
+	    cout<<"Введите N"<<endl;
 	    cin>>n;
 	    i=1;
-	    sum=0;
-	    while (sum<n)
+	    summa=0;
+	    while (summa<n)
 	    {
-	        sum+=i;
+	        summa+=i;
 	        i++;
 	    }
-	    cout<<"K="<<i-1<<", Rezult="<<sum<<endl;
+	    cout<<"K="<<i-1<<", Rezult="<<summa<<endl;
 	    return 0;
 	}
