@@ -1,18 +1,20 @@
 #include <iostream>
+#include <clocale>
 	using namespace std;
 	int main()
 	{
-	    int n,k;
+	setlocale(LC_ALL,"Rus");
+	    int m,l;
 	    int i=2;
-	    cout<<"vvedite chislo"<<endl;
-	    cin>>n;
+	    cout<<"Введите число"<<endl;
+	    cin>>m;
 	    int a=0;
 	    int b=1;
-	    while (b!=n)
+	    while (b!=m)
 	    {
-	       k=b;
+	       l=b;
 	       b=a+b;
-	       a=k;
+	       a=l;
 	       i++;
 	    }
 	    cout<<"K="<<i-1<<endl;
